@@ -1,0 +1,43 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{physicsutils}[2020/03/15 Physics Utilities]
+
+% maths
+\RequirePackage{amsmath}
+\RequirePackage{amssymb}
+
+% custom commands
+\newcommand{\change}{\ensuremath{\mathrm{\delta}}}
+\newcommand{\Change}{\ensuremath{\mathrm{\Delta}}}
+\newcommand{\dd}[1][]{\ensuremath{\mathrm{d} #1}}
+\newcommand{\ddv}[2][]{\ensuremath{\frac{\dd{#1}}{\dd{#2}}}}
+\newcommand{\dddv}[2][]{\ensuremath{\frac{\dd^2{#1}}{\dd{#2}^2}}}
+\newcommand{\Dd}[1][]{\ensuremath{\mathrm{D} #1}}
+\newcommand{\Ddv}[2][]{\ensuremath{\frac{\Dd{#1}}{\Dd{#2}}}}
+\newcommand{\pd}[1][]{\ensuremath{\partial#1}}
+\newcommand{\pdv}[2][]{\ensuremath{\frac{\pd{#1}}{\pd{#2}}}}
+\newcommand{\fd}{\change}
+\newcommand{\ld}{\Change}
+\renewcommand{\vec}{\ensuremath{\boldsymbol}}
+\newcommand{\uvec}[1]{\ensuremath{\hat{\vec{#1}}}}
+\newcommand{\bra}[1]{\ensuremath{\left\langle#1\right|}}
+\newcommand{\ket}[1]{\ensuremath{\left|#1\right\rangle}}
+\newcommand{\braket}[2]{
+   \ensuremath{\left\langle#1\middle|#2\right\rangle}
+}
+\newcommand{\braOket}[3]{
+   \ensuremath{\left\langle#1\middle|#2\middle|#3\right\rangle}
+}
+\newcommand{\expect}[1]{\ensuremath{\left\langle#1\right\rangle}}
+\newcommand{\ham}{\hat{\mathcal{H}}}
+\newcommand{\pert}{\mathrm{\Delta}\hat{\mathcal{H}}}
+\newcommand{\pot}{\hat{V}}
+\newcommand{\coulomb}{\frac{e^2}{4\pi\varepsilon_0}}
+\newcommand{\opKE}{\frac{\hat{p}^2}{2m}}
+\newcommand{\e}{\mathrm{e}}
+\newcommand{\curl}{\nabla\times}
+\newcommand{\dive}{\nabla\cdot}
+\newcommand{\grad}{\nabla}
+\newcommand{\I}{\mathrm{i}}
+\newcommand{\kB}{k_{\mathrm{B}}}
+\newcommand{\hw}{\hbar\omega}
+\newcommand{\kT}{\kB T}

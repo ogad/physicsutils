@@ -4,6 +4,7 @@
 % maths
 \RequirePackage{amsmath}
 \RequirePackage{amssymb}
+\RequirePackage{tensor}
 
 % custom commands
 \newcommand{\change}{\ensuremath{\mathrm{\delta}}}
@@ -45,3 +46,8 @@
 \newcommand{\hw}{\hbar\omega}
 \newcommand{\kT}{\kB T}
 \newcommand{\abs}[1]{\left|#1\right|}
+\newcommand{\LT}[2]{\mathrm{\Lambda}\indices*{^{#1}_{#2}}}
+\newcommand{\Uindex}[2]{{#1}^{#2}}
+\newcommand{\Lindex}[2]{{#1}_{#2}}
+\newcommand{\metric}[2]{\mathrm{g}\indices{_{#1}_{#2}}}
+\newcommand{\Umetric}[2]{\mathrm{g}\indices{^{#1}^{#2}}}
